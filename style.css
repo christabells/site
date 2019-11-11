@@ -1,0 +1,342 @@
+/*
+COLORS:
+#9DEDF1 light-blue
+#00D3D7 mint
+#FEEBE4 light-peach
+#FFAA81 peach
+#052626 not-black
+*/
+
+/*
+id блоков:
+	#offer
+	#works
+	#benefits
+	#variable
+	#about
+	#faq
+	#footer
+*/
+
+/*Общие настройки страницы и элементов
+(кнопки, фон и тп)*/
+
+/*Размеры шрифтов*/
+h1{
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+@media (max-width: 800px){
+	h1{
+	font-size: 1.8rem;
+	}
+}
+
+h2{
+	font-size: 2.1rem;
+	font-weight: 600;
+}
+
+@media (max-width: 800px){
+	h2{
+	font-size: 1.6rem;
+	}
+}
+
+body, a{
+	color: #052626;
+	font-size: 1.2rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+
+@media (max-width: 800px){
+	body, a{
+	font-size: 1rem;
+	}
+}
+
+ul{
+	list-style: none;
+	padding-inline-start: 0;
+}
+
+.btn{
+	padding: .4rem 1rem;
+	border-radius: 1.5rem;
+}
+
+.btn a{
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.btn a:hover{
+	text-decoration: none;
+}
+
+.btn-white {
+    color: #00D3D7;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-white:hover{
+    color: #00D3D7;
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+}
+
+.btn-white a{
+	color: #00D3D7;
+}
+
+.btn-peach{
+    color: #fff;
+    background-color: #FFAA81;
+    border-color: #FFAA81;
+}
+
+.btn-peach:hover{
+	color: #fff;
+	background-color: #FFBA99;
+	border-color: #FFBA99;
+}
+
+.btn-peach a{
+	color: #fff;
+}
+
+#offer, #about{
+	background: #9DEDF1 url('img/bg.jpg') no-repeat top;
+	background-size: cover;
+}
+
+#offer .container{
+	background: url('img/bg-avatar.png') no-repeat 50%;
+	background-size: auto 65%;
+	background-position: bottom;
+	height: 100vh;
+}
+
+@media (max-width: 600px){
+	#offer .container{
+		background-size: auto 50%;
+	}
+}
+
+#offer .container .row .row{
+	height: 100vh;
+}
+
+#works, #variable, #faq, footer{
+	background-color: #FEEBE4;
+}
+
+#works h2, #variable h2, #faq h2{
+	color: #FFAA81;
+	/*font-size: 18px;*/
+}
+
+#benefits, #about{
+	background-color: #9DEDF1;
+}
+
+#benefits h2, #about h2, #footer h2{
+	color: #00D3D7;
+	/*font-size: 18px;*/
+}
+
+#offer h1{
+	color: #00D3D7;
+	/*font-size: 24px;*/
+}
+
+.offer-extra, .form-extra{
+	color: #FFAA81;
+	font-weight: 500;
+}
+
+
+
+
+/*Более детальные настройки блоков*/
+
+.offer-header{
+	background: url('img/bg-header_brush.png') no-repeat center;
+	background-size: 100% 100%;
+	padding: 20px 50px 30px 50px;
+	display: inline-block;
+}
+
+.works-header, .benefits-header, .variable-header, .about-header, .faq-header{
+	background: url('img/bg-header_brush.png') no-repeat center;
+	background-size: 100% 100%;
+	padding: 20px 50px 30px 50px;
+	display: inline-block;
+}
+
+#offer .offer{
+	height: 100%;
+}
+
+#offer a:hover{
+	color: #00D3D7;
+	text-decoration: none;
+}
+
+#offer .offer-item-line{
+	color: #FFAA81;
+	display: none;
+}
+
+#offer .row {
+	position: relative;
+}
+#offer button{
+	position: absolute;
+	bottom: 4rem;
+	margin-left: -91.75px;
+}
+@media (max-width: 800){
+	#offer button{
+		margin-left: -79.295px;
+	}
+}
+
+
+#works .bg-phone{
+	background: url('img/bg-phone.png') no-repeat center;
+	width: 301px;
+	height: 602px;
+	margin: 0 auto;
+}
+
+#works .size{
+	padding: 69px 20px;
+}
+
+#works .carousel-control-prev{
+	position: absolute;
+	left: -70px;
+}
+
+@media (max-width: 400px){
+	#works .carousel-control-prev{
+		left: 0;
+	}
+}
+
+#works .carousel-control-next{
+	position: absolute;
+	right: -70px;
+}
+
+@media (max-width: 400px){
+	#works .carousel-control-next{
+		right: 0;
+	}
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffaa81' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffaa81' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+
+#variable .variable-line{
+	height: 0px;
+	background-color: #00D3D7;
+	border: 1px solid #00D3D7;
+	width: 25px;
+	margin: 0.5rem auto;
+	border-radius: 2px;
+}
+
+#form .btn{
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: 0.05em;
+}
+
+@media (max-width: 800px){
+	#form .btn{
+		font-size: 1rem;
+	}
+}
+
+#form label{
+	display: none;
+}
+
+#form .form-input{
+	background-color: #fff;
+	border-radius: 1.5rem;
+	border-color: #fff;
+	padding: .4rem 1rem;
+}
+
+#about .about-instagram a:hover {
+	color: #00D3D7;
+	text-decoration: none;
+}
+
+#about .about-instagram img{
+	height: 26px;
+	width: 26px; 
+}
+
+#faq .faq-item, #faq button{
+	display: block;
+	color: #052626;
+}
+
+#faq .faq-items-line{
+	height: 0px;
+	background-color: #00D3D7;
+	border: 1px solid #00D3D7;
+	width: 30%;
+	margin: 0.5rem auto;
+	border-radius: 2px;
+}
+
+@media (max-width: 460px){
+	#faq .faq-items-line{
+		width: 100%;
+	}
+}
+
+#faq button{
+	padding-left: 0;
+	font-size: 1.2rem;
+	display: inline-block;
+}
+
+@media (max-width: 800px){
+	#faq button{
+		font-size: 1rem;
+	}
+}
+
+footer{
+	margin:0;
+}
+
+#footer{
+	background: url('img/bg-header_brush.png') no-repeat center top;
+	background-size: 100% 150%;
+}
+
+#footer img{
+	height: 30px;
+	width: 30px; 
+}
+
+.short-text{
+	display: none;
+}
